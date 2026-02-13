@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{QEC Data Efficiency and Generalization Results}
+\label{tab:qec-efficiency}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Data Composition} & \textbf{Real Samples} & \textbf{Synthetic Samples} & \textbf{Decoder Accuracy} & \textbf{Data Efficiency} \\
+\hline
+100_0 & 700 & 0 & 0.995 $\pm$ 0.000 & 1.0$\times$ \\
+50_50 & 350 & 50,000 & 0.993 $\pm$ 0.000 & 2.0$\times$ \\
+30_70 & 210 & 70,000 & 0.993 $\pm$ 0.000 & 3.3$\times$ \\
+10_90 & 70 & 90,000 & 0.993 $\pm$ 0.000 & 10.0$\times$ \\
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+\begin{tabular}{lccc}
+\hline
+\textbf{Test Noise Type} & \textbf{Baseline Accuracy} & \textbf{Physics-Informed Accuracy} & \textbf{Degradation} \\
+\hline
+Phase Damping & 0.989 & 0.987 & -0.003 \\
+Depolarizing & 0.994 & 0.988 & -0.006 \\
+Amplitude Damping & 0.988 & 0.989 & \textcolor{green}{+0.000} \\
+Combined & 0.998 & 0.997 & -0.001 \\
+\hline
+\end{tabular}
+\end{table}
